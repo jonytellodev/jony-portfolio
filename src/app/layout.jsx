@@ -1,4 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 export const metadata = {
   title: "Jonathan Tello Carrasco | Dev & Graphic Designer",
@@ -9,7 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body className="d-flex flex-column min-vh-100">
+        <Navbar />
+        <main className="flex-fill">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }
