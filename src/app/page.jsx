@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import GraphicDesign from '@/components/pages/GraphicDesign'
 
 export default function Home() {
   
@@ -8,7 +7,7 @@ export default function Home() {
     <>
       
       <h1>Portfolio Jony</h1>
-      
+      <GraphicDesign />
     </>
   )
 }

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Nuevo logotipo Godnet - Noviembre 2019",
+    "category": "Diseño De Logotipos",
+    "description":"Logotipo para Empresa de Internet por Aire en la Ciudad de Yerba Buena, Tucumán, Argentina.",
+    "image": "/projects/godnet.png",
+    "link": "https://www.behance.net/gallery/88384121/Nuevo-logotipo-Godnet-Noviembre-2019"
+  },
+  {
+    "id": 2,
+    "title": "Nuevo logotipo Digitecnica - Noviembre 2019",
+    "category": "Diseño De Logotipos",
+    "description":"Logotipo para Empresa de Informática y Tecnología en la Ciudad de Yerba Buena, Tucumán, Argentina.",
+    "image": "/projects/digitecnica.png",
+    "link": "https://www.behance.net/gallery/88384169/Nuevo-logotipo-Digitecnica-Noviembre-2019"
+  },
+  {
+    "id": 3,
+    "title": "Imagen de Marca - FIBRONET (2020)",
+    "category": "Diseño De Logotipos",
+    "description":"Imagen de Marca para FIBRONET y su grupo de empresas proveedoras de servicios de internet, en la Ciudad de San Miguel de Tucumán, Argentina.",
+    "image": "/projects/fibronet.png",
+    "link": "https://www.behance.net/gallery/112005191/Imagen-de-Marca-FIBRONET-(2020)"
+  }
+]

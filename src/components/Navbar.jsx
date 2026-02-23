@@ -22,6 +22,7 @@ function ColorSchemesExample() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto flex-column flex-lg-row text-center text-lg-start">
+              <Nav.Link className="py-2 px-lg-3" href="#home">Home</Nav.Link>
               <Nav.Link className="py-2 px-lg-3" href="#sobremi">Sobre Mí</Nav.Link>
               <Nav.Link className="py-2 px-lg-3" href="#diseñoportfolio">Diseño Gráfico</Nav.Link>
               <Nav.Link className="py-2 px-lg-3" href="#devportfolio">Proyectos Dev</Nav.Link>

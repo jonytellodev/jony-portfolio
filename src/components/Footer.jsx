@@ -10,10 +10,10 @@ function Footer() {
           <div className="row gy-4 pb-4">
             <div className="col-12 col-md-3">
               <Image
-                            src="/JT-logo.png"
+                            src="/jt-ext.png"
                             alt="Logo"
-                            height={40}
-                            width={40}
+                            height={35}
+                            width={212.56}
                             className="d-inline-block align-top"
                           />
               <p className="small text-secondary">
@@ -51,6 +51,11 @@ function Footer() {
                     Contacto
                   </a>
                 </li>
+                <li>
+                  <a href="#" className="text-secondary text-decoration-none">
+                    CV Online
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -60,10 +65,10 @@ function Footer() {
                 <a href="#" className="text-secondary text-decoration-none">
                   Instagram
                 </a>
-                <a href="#" className="text-secondary text-decoration-none">
+                <a href="https://www.linkedin.com/in/jonytelloc90/" className="text-secondary text-decoration-none">
                   LinkedIn
                 </a>
-                <a href="#" className="text-secondary text-decoration-none">
+                <a href="https://github.com/jonytellodev" className="text-secondary text-decoration-none">
                   GitHub
                 </a>
               </div>
