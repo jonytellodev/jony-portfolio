@@ -1,12 +1,44 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import Image from "next/image";
 
 function ColorSchemesExample() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const hero = document.getElementById("hero");
+
+    if (!hero) return;
+
+    const heroHeight = hero.offsetHeight;
+
+    const handleScroll = () => {
+      if (window.scrollY >= heroHeight - 80) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    handleScroll(); // 👈 importante
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark" expand="lg">
+      <Navbar
+        expand="lg"
+  fixed="top"
+  className={
+    scrolled
+      ? "bg-dark navbar-dark shadow"
+      : "bg-transparent navbar-dark"
+  }
+      >
         <Container>
           <Navbar.Brand href="/">
             <Image
@@ -22,12 +54,12 @@ function ColorSchemesExample() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto flex-column flex-lg-row text-center text-lg-start">
-              <Nav.Link className="py-2 px-lg-3" href="#home">Home</Nav.Link>
-              <Nav.Link className="py-2 px-lg-3" href="#sobremi">Sobre Mí</Nav.Link>
-              <Nav.Link className="py-2 px-lg-3" href="#diseñoportfolio">Diseño Gráfico</Nav.Link>
-              <Nav.Link className="py-2 px-lg-3" href="#devportfolio">Proyectos Dev</Nav.Link>
-              <Nav.Link className="py-2 px-lg-3" href="#CVOnline">CV Online</Nav.Link>
-              <Nav.Link className="py-2 px-lg-3" href="#contacto">Contacto</Nav.Link>
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#sobremi">Sobre Mí</Nav.Link>
+              <Nav.Link href="#diseno">Diseño</Nav.Link>
+              <Nav.Link href="#dev">Dev</Nav.Link>
+              <Nav.Link href="#cv">CV</Nav.Link>
+              <Nav.Link href="#contacto">Contacto</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
